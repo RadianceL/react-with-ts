@@ -6,14 +6,14 @@ export interface IProps {
     onDecrement: () => void;
 }
 
-const CounterView = ( {value, onIncrement, onDecrement} : IProps) => {
+const CounterView = ({value, onIncrement, onDecrement}: IProps) => {
     return (
         <div>
             <p>
                 Clicked: {value} times
                 <br/>
-                <button onClick={onIncrement} style={{ marginRight: 20 }}> +  </button>
-                <button onClick={onDecrement}> - </button>
+                <button onClick={onIncrement} style={{marginRight: 20}}> +</button>
+                <button onClick={onDecrement}> -</button>
             </p>
         </div>
     )

@@ -2,7 +2,7 @@ import React from "react";
 import {HttpClient} from "../http/HttpClient";
 import store from "../store/ApplicationCenterStore";
 
-export class HttpTest extends React.Component<any, any>{
+export class HttpTest extends React.Component<any, any> {
 
     public httpClient: HttpClient
 

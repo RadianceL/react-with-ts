@@ -1,10 +1,10 @@
- import {IStoreState} from "../../store/ReducerTypes";
+import {IStoreState} from "../../store/ReducerTypes";
 import {Dispatch} from "redux";
 import {decrement, increment} from "./store/ActionCreators";
 import {connect} from "react-redux";
 import CounterView from "./CounterView";
 
-const  mapStateToProps = (status : IStoreState): { value: number } => ({
+const mapStateToProps = (status: IStoreState): { value: number } => ({
     value: status.counter.number
 })
 

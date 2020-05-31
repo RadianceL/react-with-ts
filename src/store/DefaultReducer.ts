@@ -1,4 +1,4 @@
-import { combineReducers } from 'redux';
+import {combineReducers} from 'redux';
 import CounterActionReducer from "../view/counter/store/CounterActionReducer";
 
 const reducer = combineReducers({

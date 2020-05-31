@@ -13,7 +13,7 @@ export class Interceptors {
         return this.instance;
     }
 
-    public initInterceptors(){
+    public initInterceptors() {
 
     }
 
