@@ -3,15 +3,15 @@ import {Interceptors} from "./Interceptors";
 
 export class HttpClient {
 
-    public axios: AxiosInstance
+    public httpClient: AxiosInstance
 
     constructor() {
-        this.axios = new Interceptors().getInterceptors();
+        this.httpClient = new Interceptors().getInterceptors();
     }
 
     public getData(url: string) {
         return new Promise((resolve, reject) => {
-            this.axios.get(url, null).then((res) => {
+            this.httpClient.get(url, null).then((res) => {
                 this.resultHandle(res, resolve);
             }).catch((err) => {
                 reject(err.message)
